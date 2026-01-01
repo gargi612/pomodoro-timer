@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusFlow</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main">
+
+    <!-- SETTINGS (INPUTS) -->
+    <div class="settings">
+        <label>
+          Focus
+          <input type="number" id="focusInput" value="25">
+        </label>
+
+        <label>
+          Break
+          <input type="number" id="breakInput" value="5">
+        </label>
+
+      <button id="applyBtn" class="apply-btn">Apply</button>
+    </div>
+
+    <!-- MODE BUTTONS -->
+    <div class="modes">
+      <button class="mode active" data-time="25">pomodoro</button>
+      <button class="mode" data-time="5">short break</button>
+      <button class="mode" data-time="15">long break</button>
+    </div>
+
+    <!-- TIMER DISPLAY -->
+    <div class="timer-display" id="timer">
+      25:00
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <button id="startBtn" class="start-btn">start</button>
+      <button id="pauseBtn" class="icon-btn">⏸</button>
+      <button id="resetBtn" class="icon-btn">⟳</button>
+    </div>
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
